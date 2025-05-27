@@ -13,6 +13,7 @@ const ErrorPage = () => {
             Looks like this page is taking a 🍔 lunch break. Our chefs are cooking up something tasty 🍕
             elsewhere, head back to the homepage.
           </p>
+          {/* hej */}
           <p className="italic">We’ll be back with a full plate soon!🍽️</p>
           <Link to="/" className="error-button">← Go Back To Homepage</Link>
         </div>
