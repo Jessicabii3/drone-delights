@@ -1,0 +1,170 @@
+.meal-card {
+  display: flex;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  max-width: 700px;
+  height: auto;
+  min-height: 220px;
+  max-height: none;
+ 
+}
+
+.meal-card-img {
+  width: 50%;
+  position: relative;
+}
+
+.meal-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.status-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.status-badge .circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: green;
+}
+
+/* Statusfärger */
+.status-badge.open .circle {
+  background: #6ea837;
+}
+
+.status-badge.closing-soon .circle {
+  background: #f9d533;
+}
+
+.status-badge.closed-for-today .circle {
+  background: #e54d42;
+}
+
+.card-content {
+  height: auto;              
+  max-height: 260px;          
+  overflow: auto;              
+  flex-direction: column;
+  width: 50%;
+  padding:16px 16px 12px 16px;
+  
+}
+
+.rating-type {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.rating {
+  background: #6ea837;
+  color: white;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.rating-icon {
+  width: 14px;
+  height: 14px;
+}
+
+.type {
+  font-size: 14px;
+  color: #444;
+}
+
+.meal-name {
+  margin: 4px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.location {
+  font-size: 14px;
+  color: #f97300;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.location-icon {
+  width: 14px;
+  height: 14px;
+}
+
+.delivery-time {
+  font-size: 14px;
+  color: #222;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1e1e1e;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.save-button,
+.cart-button {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 10px 16px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  flex: 1;
+}
+
+.save-button {
+  background: #fff4e7;
+  color: #ff7300;
+}
+
+.save-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.cart-button {
+  background: #ff7300;
+  color: white;
+}
+
+.cart-icon {
+  width: 16px;
+  height: 16px;
+}

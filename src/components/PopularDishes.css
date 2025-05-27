@@ -1,0 +1,97 @@
+
+.popular-section {
+  margin-top: 32px;
+  color: white;
+  text-align: center;
+}
+
+.popular-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+.dish-wrapper {
+  background: rgba(255, 255, 255, 0.15); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 24px;
+  border-radius: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.card-container {
+  max-width: 1200px; 
+  height:100%; 
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+ background: rgba(0, 0, 0, 0.4);
+ border-radius: inherit;
+}
+
+.dish-card {
+  width: 300px;
+  height: 320px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: transform 0.3s;
+}
+.dish-card:hover {
+  transform: scale(1.03);
+}
+
+ .card-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100;
+  padding: 12px 16px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 0 0 24px 24px;
+}
+
+
+.card-overlay h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.card-overlay p {
+  font-size: 13px;
+  line-height: 1.4;
+  margin: 0;
+  color:rgb(249, 249, 249);
+}
+@media (max-width: 768px) {
+  .dish-wrapper h2 {
+    font-size: 24px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dish-card {
+    max-width: 90%;
+    height: 260px;
+  }
+
+  .card-overlay h3 {
+    font-size: 18px;
+  }
+
+  .card-overlay p {
+    font-size: 13px;
+  }
+}
