@@ -1,70 +1,17 @@
-# Getting Started with Create React App
+# Projektanalys
+I projektet Drone Delights, en matleveransapplikation, valde jag att bygga applikationen med React. Anledningen till detta var att jag ville arbeta komponentbaserat, få en tydlig uppdelning mellan vyer och logik, samt effektivt hanterat state och navigation genom hela applikationen. Syftet med projektet var att skapa en applikation där både gästanvändare och inloggade användare kunde bläddra bland olika maträtter, lägga till i varukorgen samt spara favoriter. Applikationens användargränssnitt anpassas dynamisk beroende på om användaren är inloggad eller inte, vilket skapar en mer funktionell och personlig upplevelse.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Jag använde React Router för att möjliggöra navigation mellan olika sidor, såsom Home, meny, varukorgen och bekräftelsesidan etc. För att organisera projektet strukturerade jag koden i separata mappar: pages, context och components. Varje komponent har ett tydligt och avgränsat ansvar, vilket gör det enklare att både förstå, felsöka och vidareutveckla applikationen. 
 
-## Available Scripts
+För att hantera data använde jag json-server som en enkel och lokal backendlösning. Detta gjorde det möjligt att arbeta med verklighetstrogna API-anrop, vilket gav mig en djupare förståelse för hur frontend kommunicera med ett backend-API. Jag skapade egna resurser för prdukter, favoriter, städer och användare, och testade dessa via fetch-anrop direkt från fronted. 
 
-In the project directory, you can run:
+Jag implementerade tre olika context: AuthContext, CartContext och FavoritesContext. Varje context har ansvar för olika hanteringar. Detta möjliggjorde global hantering av applikationens state och gjorde det möjligt att undvika prop-drilling. Det förbättrade kodstrukturen, läsbarheten och möjliggjorde återanvändbara komponenter med enkel åtkomst till relevant data.
 
-### `npm start`
+Detta projektet har gett mig flera viktiga insikter, jag har insett att en tydlig struktur och komponentuppdelning minimierar fel och sparar tid. Jag har också förstått vikten av att sätta användaren i fokus, tänka på funktionalitet, flöde och visuell upplevelse som en helhet. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Starta json-server
+npx json-server --watch src/data/db.json --port 3001
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Testinloggning
+Användarenamn: user
+lösen:password

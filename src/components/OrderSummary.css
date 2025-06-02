@@ -1,0 +1,163 @@
+.order-summary {
+  background: #fff;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.cart-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+  align-items: stretch;
+  
+}
+
+.cart-item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  min-height: 60px;
+}
+
+.cart-item img {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.item-name {
+  font-weight: bold;
+  margin: 0;
+}
+
+.item-desc {
+  font-size: 13px;
+  color: #777;
+  margin: 0;
+  min-height: 32px;
+}
+
+.item-price {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.discount-row {
+  display: flex;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.discount-row input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.apply-btn {
+  padding: 10px 16px;
+  background-color: #ff7300;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.totals p {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.totals .total {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.saved-heading {
+  margin-top: 32px;
+  margin-bottom: 16px;
+  font-size: 15px;
+}
+
+.saved-meals {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.saved-meal {
+  display: flex;
+}
+.saved-meal img {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.meal-name {
+  font-weight: bold;
+  margin: 0;
+}
+
+.meal-meta,
+.meal-price {
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+}
+.cart-item-price-qty {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  min-width: 80px;
+  align-self: flex-end;
+}
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: #f5f5f5;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.quantity-controls button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+.saved-meals-wrapper {
+  margin-top: 2rem;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+.cart-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  background-color: #fefefe;
+}
+
+.error-text {
+  color: #c0392b;
+  background-color: #fdecea;
+  border: 1px solid #f5c6cb;
+  padding: 12px 16px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+}

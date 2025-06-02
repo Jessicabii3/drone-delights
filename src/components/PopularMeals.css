@@ -26,6 +26,16 @@
   gap: 24px;
   padding: 20px 0;
 }
+.explore-button {
+  background: none;
+  border: none;
+  color:#ff7300;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0;
+}
+
 @media (max-width: 768px) {
   .meals-header {
     flex-direction: column;

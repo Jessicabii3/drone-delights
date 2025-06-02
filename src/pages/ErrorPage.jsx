@@ -5,9 +5,10 @@ import { Link } from "react-router-dom";
 
 const ErrorPage = () => {
   return (
-    <div className="error-wrapper">
+    <div className="error-wrapper"
+    style={{ backgroundImage: 'url("/images/ErrorImg.png")' }}>
       <div className="error-bg">
-        <div className="error-text">
+        <div className="error-texts">
           <h1>Oops!</h1>
           <p>
             Looks like this page is taking a 🍔 lunch break. Our chefs are cooking up something tasty 🍕

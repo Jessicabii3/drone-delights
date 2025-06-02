@@ -57,7 +57,7 @@
 .app-phone img,
 .app-burger img {
   width: 100%;
-  max-width: 250px; /* eller 100% för full krympning */
+  max-width: 250px; 
   height: auto;
 }
 

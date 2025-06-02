@@ -1,6 +1,5 @@
 import React from "react";
 import "./SatisfySection.css";
-import backgroundImage from "../assets/images/SatisfyImg.png";
 import {useNavigate} from "react-router-dom";
 
 
@@ -8,7 +7,7 @@ const SatisfySection = () =>{
     const navigate = useNavigate();
 
     return(
-        <section className="satisfy-section" style={{ backgroundImage: `url(${backgroundImage})` }}>
+        <section className="satisfy-section" style={{ backgroundImage: `url("/images/SatisfyImg.png")` }}>
             <div className="satisfy-overlay">
                 <h2>Ready to Satisfy Your Cravings?</h2>
                 <button onClick={() => navigate("/menu")}>Order Now</button>
