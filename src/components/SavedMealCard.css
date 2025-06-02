@@ -1,0 +1,61 @@
+.saved-meal-card {
+  display: grid;
+  grid-template-columns:  48px 1fr auto;
+  gap: 12px;
+  align-items: center;
+  background-color: #fafafa;
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.saved-meal-card img {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.saved-meal-card .meal-name {
+  font-weight: bold;
+  margin: 0;
+}
+
+.saved-meal-card .meal-meta,
+.saved-meal-card .meal-price {
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+}
+.meal-price-info {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100%;
+}
+
+.add-btn{
+  background:rgb(249, 240, 240);
+  color: #ff7300;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+
+}
+.info-text {
+  font-size: 0.9rem;
+  color: #888;
+  background-color: #f8f8f8;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-top: 10px;
+  text-align: center;
+  border: 1px dashed #ccc;
+  transition: background-color 0.3s ease;
+}

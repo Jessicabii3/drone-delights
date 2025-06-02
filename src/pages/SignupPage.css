@@ -110,6 +110,11 @@
   font-weight: 500;
   text-decoration: none;
 }
+.error-texts {
+  color: red;
+  font-size: 13px;
+  margin: 4px 0 12px;
+}
 
 @media (max-width: 768px) {
   .signup-page {

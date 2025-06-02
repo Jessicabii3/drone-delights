@@ -1,0 +1,153 @@
+.meal-cards {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+.meal-img-wrapper {
+  position: relative;
+}
+
+.meal-cards:hover {
+  transform: translateY(-4px);
+}
+
+.meal-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.meal-info {
+   padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.meal-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.meal-price {
+  color: #ff7300 !important;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 0;
+}
+.meal-info .meal-top .meal-price {
+  font-size: 20px !important;
+}
+
+
+.meal-rating {
+  display: flex;
+  align-items: center;
+  background-color: #4caf50;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 8px;
+  gap: 4px;
+}
+
+.meal-rating img {
+  width: 14px;
+  height: 14px;
+}
+
+.meal-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 8px 0 4px 0;
+  color: #333;
+}
+
+.meal-description {
+  font-size: 14px;
+  color: #777;
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.5;
+  
+}
+
+.meal-divider {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 16px 0;
+}
+
+.meal-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+  padding: 0 8px;
+}
+
+.save-btn,
+.cart-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 7px 9px; 
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  white-space: nowrap;
+  
+}
+
+.save-btn {
+  background-color: #fff;
+  color: #ff7300;
+  border: 1.5px solid #ff7300;
+}
+
+.save-btn img {
+  width: 16px;
+  height: 16px;
+}
+
+.cart-btn {
+  background-color: #ff7300;
+  color: white;
+}
+
+.cart-btn img {
+  width: 16px;
+  height: 16px;
+  filter: brightness(100);
+}
+
+@media (max-width: 600px) {
+  .meal-cards {
+    max-width: 100%;
+  }
+
+  .meal-title {
+    font-size: 16px;
+  }
+
+  .meal-description {
+    font-size: 13px;
+  }
+
+  .meal-buttons {
+    flex-direction: column;
+  }
+}

@@ -3,8 +3,9 @@ import "./Footer.css";
 import faceBookIcon from "../assets/icons/facebook.svg";
 import twitterIcon from "../assets/icons/twitter.svg";
 import instagramIcon from "../assets/icons/instagram.svg";
-
+import { useNavigate } from "react-router-dom";
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <footer className="footer">
       <div className="footer-top">
@@ -50,7 +51,7 @@ const Footer = () => {
             <h4>Recieve exclusive offers in your mailbox.</h4>
            <div className="newsletter-form">
             <input type="email" placeholder="Enter your email"></input>
-            <button>Submit</button>
+            <button onClick={() => navigate("/404")}>Submit</button>
             </div> 
         </div>
       </div>
